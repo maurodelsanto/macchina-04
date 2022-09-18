@@ -43,13 +43,13 @@ let VelocitàDietro = 0
 let VelocitàAvanti = 0
 VelocitàAvanti = 120
 VelocitàDietro = 50
-VelocitàRotazione = 60
-VelocitàRotazioneNeg = 30
+VelocitàRotazione = 40
+VelocitàRotazioneNeg = 40
 AvviaMacchina = true
 radio.setGroup(1)
 basic.forever(function () {
     if (AvviaMacchina == true) {
-        DFRobotMaqueenPlusV2.showColor(0xff0000)
+        DFRobotMaqueenPlusV2.showColor(0xffff00)
     }
     if (AvviaMacchina == false) {
         DFRobotMaqueenPlusV2.ledBlank()
